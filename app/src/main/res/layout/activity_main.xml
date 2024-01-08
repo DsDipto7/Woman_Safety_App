@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/signpage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:text="SignUp"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="20dp"
+        android:textSize="30sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Emailtextlayout"
+
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/textView1"
+        android:hint="Enter Your Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password_text_inputLayout"
+
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/Emailtextlayout"
+        android:hint="Enter Your Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Confirmpasslayout"
+
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/Password_text_inputLayout"
+        app:endIconMode="password_toggle"
+        android:hint="Confirm Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmpassword_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:backgroundTint="@color/blue"
+        android:id="@+id/btnRegister"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Confirmpasslayout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview2"
+        android:textColor="@color/black"
+        android:text="Already have account"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnRegister"/>
+
+
+    <TextView
+        android:id="@+id/logintextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/textview2"/>
+
+
+</RelativeLayout>

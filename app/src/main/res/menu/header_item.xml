@@ -1,0 +1,26 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home_id"
+        />
+
+    <item android:title="Communicate">
+        <menu
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- Section 3: About Us and Feedback -->
+            <group android:id="@+id/group_section3">
+                <item
+                    android:title="About_us"
+                    android:id="@+id/about_usid"/>
+                <item
+                    android:title="Police Stations"
+                    android:id="@+id/policeStations"/>
+                <item
+                    android:title="Share"
+                    android:id="@+id/share"/>
+            </group>
+        </menu>
+    </item>
+</menu>

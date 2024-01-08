@@ -1,0 +1,396 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainPage">-->
+<!--    <View-->
+<!--        android:id="@+id/top_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:background="@drawable/bg_view"-->
+<!--        />-->
+<!--    <GridLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:rowCount="3"-->
+<!--        android:columnCount="3"-->
+<!--        android:layout_marginLeft="24dp"-->
+<!--        android:layout_marginTop="-88dp"-->
+<!--        android:layout_marginRight="24dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:layout_below="@+id/top_view">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/c1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="15dp"-->
+<!--            app:cardElevation="12dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="0">-->
+
+<!--            <LinearLayout-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+<!--               <ImageView-->
+<!--                   android:layout_width="80dp"-->
+<!--                   android:layout_height="88dp"-->
+<!--                   android:src="@drawable/baseline_add_alert_24"-->
+<!--                   android:layout_gravity="center_horizontal"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Alert"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    />-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/c2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="15dp"-->
+<!--            app:cardElevation="12dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="1">-->
+
+<!--            <LinearLayout-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="88dp"-->
+<!--                    android:src="@drawable/baseline_contacts_24"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add Contact"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    />-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/c3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="15dp"-->
+<!--            app:cardElevation="12dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_row="2"-->
+<!--            android:layout_column="0">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="88dp"-->
+<!--                    android:src="@drawable/baseline_location_on_24"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Location"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    />-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/c4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="15dp"-->
+<!--            app:cardElevation="12dp"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_row="2"-->
+<!--            android:layout_column="1">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="88dp"-->
+<!--                    android:src="@drawable/baseline_message_24"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Help SMS"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    />-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </GridLayout>-->
+
+<!--</RelativeLayout>-->
+
+
+
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainPage">
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_view"
+            />
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_500"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="-88dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@+id/top_view">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_margin="12dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="0">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="88dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/baseline_add_alert_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alert"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_margin="12dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="1">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/baseline_contacts_24"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Contact"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/baseline_location_on_24"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_margin="12dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/baseline_message_24"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help SMS"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headers"
+        app:menu="@menu/header_item" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
