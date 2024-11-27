@@ -9,6 +9,8 @@
 
 <h2>Overview</h2>
 <p>The Woman Safety App is designed to provide safety and security to women in times of danger. This application, developed in Java, offers various features including login and registration, contact saving, emergency SMS with live location, and an alert option to notify nearby people. The app aims to empower women by giving them a reliable tool to seek help quickly and efficiently.</p>
+![0](https://github.com/user-attachments/assets/a2c4fba6-03bb-4093-a299-5409a79c8e23)
+
 
 <h2>Features</h2>
 <ul>
